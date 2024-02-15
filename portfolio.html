@@ -11,15 +11,15 @@
 
         <header><h1>Thomas Morgan</h1></header>
 
-        <nav><a href="portfolio.html">About Me</a>
-            <a href="portfolio.html">Projects</a>
-            <a href="portfolio.html">Skills</a>
+        <nav><a href=#about>About Me</a>
+            <a href=#projects>Projects</a>
+            <a href=#skills>Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
 
         <main>
             <section class="about">
-                <h2>About Me</h2>
+                <h2 id="about">About Me</h2>
                   <p>Hi, my name's Thomas and I have have been learning to code since October 2023. <br>
                      So far I have been studying and practicing my skills in Python, HTML, CSS and JavaScript. <br>
                      Below I have included samples of some of the projects I have completed using the above skills.
@@ -27,26 +27,48 @@
                   <br>
             </section>
 
-            <section id="picture">
+            <div id="picture">
                 <h2>Image of Thomas Morgan</h2>
                 <!--Not adding an image for practice as don't have suitable one-->
-            </section>
+            </div>
             
-            <section class="projects">
+            <section id="projects">
                 <h2>Projects</h2>
-                  <h3>The VC Experience</h3>
-                    <img src="The VC Experience.jpg" alt="An image of the VC experience homepage"/>
-                    <p>Above is an example of a website I created using Visual Studio Code to demonstrate my skills in flexbox</p>
-                 <h3>South Village Run Club</h3>
-                    <img src="South Village Run Club.jpg" alt="An image of the south village run clubs homepage"/>
-                    <p>Above is an example of a website I created using Visual Studio Code to demonstrate my skills in responsive design</p>
-                  <h3>Tea Cozy</h3>
-                    <img src="Tea Cozy.jpg" alt="An image of the tea cozys homepage"/>
-                    <p>Above is an example of a website I created using Visual Studio Code to demonstrate my skills in responsove design</p>
-            </section>
+                  <details class="projects">
+                    <summary id="VC">
+                        The VC Experience
+                    </summary>
+                    <figure>
+                      <img src="The VC Experience.jpg" alt="An image of the VC experience homepage"/>  
+                      <figcaption> Above is an example of a website I created using Visual Studio Code to demonstrate my skills in flexbox
+                      </figcaption>
+                    </figure>
+                  </details>
+
+                  <details class="projects">
+                    <summary id="village">
+                        South Village Run Club
+                    </summary>
+                    <figure>
+                      <img src="South Village Run Club.jpg" alt="An image of the south village run clubs homepage"/>  
+                      <figcaption> Above is an example of a website I created using Visual Studio Code to demonstrate my skills in responsive design
+                      </figcaption>
+                    </figure>
+                  </details>
+
+                  <details class="projects">
+                    <summary id="tea">
+                        Tea Cozy
+                    </summary>
+                    <figure>
+                      <img src="Tea Cozy.jpg" alt="An image of the tea cozy's homepage"/>  
+                      <figcaption> Above is an example of a website I created using Visual Studio Code to demonstrate my skills in responsive design
+                      </figcaption>
+                    </figure>
+                  </details>
             
             <section class="skills">
-                <h2>Skills</h2>
+                <h2 id="skills">Skills</h2>
                   <ul>
                     <li>Python</li>
                     <li>HTML</li>
