@@ -3,23 +3,31 @@
     <head>
         <title>Home Page</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link href="style.css" rel="stylesheet">
 
     </head>
 
     <body>
 
-        <header><h1>Thomas Morgan</h1></header>
+        <!--<header id="name"><h1>Thomas Morgan</h1></header>-->
 
-        <nav><a href=#about>About Me</a>
-            <a href=#projects>Projects</a>
-            <a href=#skills>Skills</a>
-            <a href="contact.html">Contact</a>
+        <nav>
+            <h1 id="heading">Thomas Morgan</h1>
+            <ul class="navigation">
+                <li class="navigation"><a href=#about>About Me</a></li>
+                <li class="navigation"><a href=#projects>Projects</a></li>
+                <li class="navigation"><a href=#skills>Skills</a></li>
+                <li class="navigatuon"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!--<a href=#about>About Me</a>
+            <a href=#projects class="navigation">Projects</a>
+            <a href=#skills class="navigation">Skills</a>
+            <a href="contact.html" class="navigation">Contact</a>-->
         </nav>
 
         <main>
             <section class="about">
-                <h2 id="about">About Me</h2>
+                <h2 id="aboutme">About Me</h2>
                   <p>Hi, my name's Thomas and I have have been learning to code since October 2023. <br>
                      So far I have been studying and practicing my skills in Python, HTML, CSS and JavaScript. <br>
                      Below I have included samples of some of the projects I have completed using the above skills.
@@ -28,11 +36,11 @@
             </section>
 
             <div id="picture">
-                <h2>Image of Thomas Morgan</h2>
+                <p>Image of Thomas Morgan</p>
                 <!--Not adding an image for practice as don't have suitable one-->
             </div>
             
-            <section id="projects">
+            <section id="myprojects">
                 <h2>Projects</h2>
                   <details class="projects">
                     <summary id="VC">
@@ -66,10 +74,11 @@
                       </figcaption>
                     </figure>
                   </details>
+                  </section>
             
-            <section class="skills">
+            <section>
                 <h2 id="skills">Skills</h2>
-                  <ul>
+                  <ul class="skilllist">
                     <li>Python</li>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -79,10 +88,13 @@
         </main>
 
         <footer>
-            <h2>Contact</h2>
-            <p>Email Address</p>
-            <p>Phone Number</p>
-            <p>Linked In</p>
+            <section class="contact">
+                <h2>Contact</h2>
+                <p>Email Address</p>
+                <p>Phone Number</p>
+                <p>Linked In</p>
+            </section>
+            
         </footer>
     </body>
 </html>
