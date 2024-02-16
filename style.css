@@ -39,33 +39,12 @@ nav {
     padding-top: 20px;
     position: relative;
     right: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 header {
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 30px;
-}
-
-.about {
-    text-align: left;
-    padding-left: 30px;
-    padding-bottom: 20px;
-}
-
-
-#aboutme {
-    font-size: 30px;
-    padding-bottom: 20px;
-    padding-top: 40px;
-}
-
-#picture {
-    font-size: 20px;
-    text-align: center;
-    padding-left: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 #myprojects {
@@ -75,51 +54,47 @@ header {
     padding-top: 30px;
 }
 
-.skills {
-    position: relative;
-    left: 1000px;
-    bottom: 370px;
-    padding-right: 30px;
-    font-size: 20px;
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 20px;
 }
 
-#listskills {
-    position: relative;
-    right: 80px;
+.grid > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-  
-.projects {
-
+header, 
+.about, 
+.picture,
+.projects,
+.skills,
+footer {
+    padding: 1em;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
 }
 
-#VC {
-
+header, 
+footer {
+    grid-column: 1 / 4;
 }
 
-#village {
-
+.about {
+    height: 400px;
 }
 
-#tea {
-
-}
-
-.skills {
-  
-}
-
-#skilltitle {
-
-}
-
-img {
-    height: 500px;
-    width: 1000px;
-}
 
 .contact {
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 50px;
+    position: relative;
+    left: 150px;
+}
+
+h2 {
+    display: inline-block;
 }
