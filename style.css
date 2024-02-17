@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+  
 
 /*Add colour when writing final portfolio*/
 
@@ -43,6 +44,7 @@ nav {
     right: 30px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 header {
@@ -59,16 +61,16 @@ header {
 header {
     position: relative;
     top: 50px;
+    bottom: 50px;
+    margin-bottom: 100px;
 }
-
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-rows: auto auto auto auto;
     gap: 20px;
     position: relative;
-    top: 100px;
 }
 
 .grid > * {
@@ -84,9 +86,10 @@ header,
 .skills,
 footer {
     padding: 1em;
-    display: flex; 
+    display: flex;
     flex-direction: column; 
     justify-content: space-between;
+    flex: auto;
 }
 
 header, 
@@ -98,10 +101,23 @@ footer {
     height: 400px;
 }
 
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+  }
+
 
 .contact {
+    position: relative;
+    top: 20px;
     text-align: center;
+    left: 0px;
+    line-height: 1.6;
+    
 }
+
 
 h2 {
     display: inline-block;
