@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light"><!--if change to dark page will be dark in conjunction with css code-->
     <head>
         <title>Home Page</title>
         <meta charset="utf-8">
         <link href="style.css" rel="stylesheet">
-
     </head>
 
     <body>  
+      
         <nav class="navbar">
                 <a href=#about>About Me</a>
                 <a href=#projects>Projects</a>
                 <a href=#skills> Skills</a>
                 <a href="contact.html"> Contact</a>
         </nav>
-              
-      
-        <header id="name"><h1>Thomas Morgan</h1></header>
+        
+       
+        <header id="name"><h1>Thomas Morgan</h1>
+          <!--adding below button for light dark theme JavaScript to practice using JavaScript-->
+          <button onclick="myFunction()">Toggle dark mode</button>
+          <!--for some reason I was struggling to link the external file so wrote inline-->
+          <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
+      </header>
             <!--<a href=#about>About Me</a>
             <a href=#projects class="navigation">Projects</a>
             <a href=#skills class="navigation">Skills</a>
@@ -35,7 +45,7 @@
             <p>Image of Thomas Morgan</p>
             <!--Not adding an image for practice as don't have suitable one-->
           </div>
-            
+            <!--will need to restructure code for hover to work on real portfolio-->
           <div class="projects">
             <h2 id="projecttitle">Projects</h2>
               <details class="projects">
@@ -88,9 +98,11 @@
                 <p>Phone Number</p>
                 <p>Linked In</p>
             </section>   
+            
         </footer>
       
-      
+        
       
   </body>
+  
 </html>

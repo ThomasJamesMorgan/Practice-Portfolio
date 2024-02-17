@@ -118,7 +118,23 @@ img {
     
 }
 
-
 h2 {
     display: inline-block;
 }
+
+/*below is code to change from light mode to darkmode in conjunction with css*/
+
+button {
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    width: 250px;
+    position: relative;
+    left: 500px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
