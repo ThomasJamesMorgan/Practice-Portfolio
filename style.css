@@ -7,6 +7,11 @@
 
 /*Add colour when writing final portfolio*/
 
+/*Below only includes css for desktop so tablet and phone elements are block level
+When you make your real porfolio make sure to add css to other viewports to improve appearance*/
+
+@media only screen and (min-width: 1000px) {
+
 
 #heading {
     font-size: 50px;
@@ -138,3 +143,6 @@ button {
     background-color: black;
     color: white;
   }
+
+}
+
